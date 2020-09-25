@@ -1,3 +1,38 @@
+nav{
+		z-index: 1;
+		background-color: black;
+}
+
+.navbar-dark{
+        background-color: black;
+        height: 100px;
+}
+
+#Navbar{
+	   margin-left: 41%;
+     background-color: black;
+  }
+
+
+#Navbar ul li {
+	  display: inline-block;
+	  border-radius: 5px;
+	  line-height: 30px;
+	  margin: 5px;
+  }
+
+#Navbar ul li #unique, #Navbar ul li a:hover{
+	  background: #ff5100;
+	  transition: .5s;
+	  border-radius: 5px
+}
+
+#Navbar ul li .active{
+	background-color: #ff5100;
+}
+
+#Navbar ul .nav-item .nav-link{color: white}
+
 
 #accordion .card .card-header h5 button b:hover{color: yellow}
 #accordion .card .card-header h5 button b{
@@ -24,24 +59,30 @@
 
 #accordion1 .card .card-body ol li{font-weight: bold;}
 
-#headingOne,#headingTwo,#headingThree,#headingFour,#headingFive,#headingSix,#headingSeven,#headingEight {
+#headingOne,#headingTwo,#headingThree,#headingFour,#headingFive,#headingSix,#headingSeven,#headingEight{
   background: black;  
 }
-header{
 
-        padding: 70px 30px 70px 30px;
-        margin: 0px auto;
-        height: 400px;
-        background-color: transparent;     
+.tab-content{
+                    border-right: 1px solid #ddd;
+                    border-left: 1px solid #ddd;
+                    border-bottom: 1px solid #ddd;
+                    padding: 10px;
+                    padding-left: 0px;
+                    margin-left: 0px;
+                    color: black;
+                    /*background: url('wood.jpg');
+  background-size: cover;*/
+                    background-color: rgba(0, 0, 0, 0.10);
+                }
+
+.nav-link{
+	background-color: black;
+	color: white; 
 }
 
-header .btn{
-  background-color: #ff5100;
-  border-color: red
-}
-
-header .btn:hover{
-  background-color: green;
+.nav-link:hover{
+	color: #ff5100;
 }
 .main{
   background-image: url('bgfood2.png');
@@ -51,100 +92,25 @@ header .btn:hover{
   background-position: 50% 50%;
 }
 
-.navbar-dark{
-        background-color: black;
-        height: 100px;
+header{
+        padding: 70px 30px 70px 30px;
+        margin: 0px auto;
+       	background-color: : transparent;
 }
 
-#Navbar{
-	   margin-left: 41%;
-     background-color: black;
-  }
-
-
-#Navbar ul li {
-	  display: inline-block;
-	  border-radius: 5px;
-	  line-height: 30px;
-	  margin: 5px;
-  }
-
-#Navbar ul li .active,#Navbar ul li a:hover{
-	  background: #ff5100;
-	  transition: .5s;
-	  border-radius: 5px
+#card{
+    border-radius: 4px;
+    
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    
+    cursor: pointer;
+}
+#card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.40), 0 4px 8px rgba(0,0,0,.06);
 }
 
-#Navbar ul .active {
-	  background: #ff5100;
-	  transition: .5s;
-	  border-radius: 5px;
-}
-
-#Navbar ul .nav-item .nav-link{color: white}
-
-/*.navbar .navbar-brand img{
-	  height: 90px;
-	  width: 150px;
-	  border-radius: 10px;
-	  margin-top: 0px;
-	  padding-top: 0px;
-	  position: relative;
-	  top: -25px
-
-}*/
-
-
-
-.panel{
-	text-align: center;
-	margin-top: 20px;
-}
-
-.panel-body{
-	text-align: center;
-	margin-left: 0px;
-	background-image: url('texture6.jpg');
-	background-size: cover;
-
-}
-
-.panel-heading{
-	height: 60px;
-
-}
-
-.panel a .panel-heading .panel-title:hover{color: red
-											}
-
-.panel a .panel-heading .panel-title {
-	color: black;
-}
-
-
-.row-header{
-                    margin: 0px auto;
-                    padding: 0px auto;
-
-                }
-
-                .row-content{
-                    margin: 0px auto;
-                    padding: 50px 0px 50px 0px;
-                    border-bottom: 1px ridge;
-                    min-height: 400px;
-                }
-
-               
-
-                
-                .address{
-                    font-size: 80%;
-                    margin: 0px;
-                    color: #0f0f0f;
-                }
-
-                
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -290,38 +256,4 @@ header .btn:hover{
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
-}
-
-#footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
-  color: #fff;
-}
-
-
-.back-to-top {
-  position: fixed;
-  display: none;
-  right: 15px;
-  bottom: 15px;
-  z-index: 995;
-}
-
-.back-to-top i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  color: #ffb300;
-  transition: all 0.4s;
-  border: 2px solid #cda45e;
-}
-
-.back-to-top i:hover {
-  background: #ffb300;
-  color: #1a1814;
 }
